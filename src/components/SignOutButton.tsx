@@ -1,16 +1,22 @@
-'use client'
-import React from 'react'
-import { Button } from './ui/button'
-import { logOut } from '@/app/authenticate/auth.action'
+"use client";
+import React from "react";
+import { Button } from "./ui/button";
+import { logOut } from "@/app/authenticate/auth.action";
 
 type Props = {
-    children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 const SignOutButton = ({ children }: Props) => {
-    return (
-        <Button onClick={() => { logOut() }}>{children}</Button>
-    )
-}
+  return (
+    <Button
+      onClick={() => {
+        logOut();
+      }}
+    >
+      {children}
+    </Button>
+  );
+};
 
-export default SignOutButton
+export default SignOutButton;
