@@ -34,7 +34,7 @@ export async function GET(req: NextRequest, res: Response) {
     codeVerifier
   );
   const googleResponse = await fetch(
-    "https://api.beteam1genics.my.id/api/auth/google",
+    "https://www.googleapis.com/oauth2/v1/userinfo",
     {
       headers: {
         Authorization: `Bearer ${accessToken}`,
